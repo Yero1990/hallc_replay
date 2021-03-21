@@ -2,16 +2,57 @@
 # Block Definitions *
 #********************
 
-block D.*
-block T.hms.*
-block H.cer.*
-block H.dc.*
-block H.tr.*
-block H.hod.*
-block H.cal.*
-block H.gtr.*
-block H.kin.*
-block H.rb.*
-block H.react.*
-block H.extcor.*
-#block H.bcm.*
+block g.*
+
+;Cal. Attenuaation Coeff. Studies
+;block T.hms.*
+;block H.cer.*
+;block H.dc.*_fp*
+;block H.dc.*RefTime*
+;block H.hod.*RefTime*
+;block H.cal.*
+
+
+;Ref. Time / Time Window checks
+block T.hms.*FADC_TREF*
+block T.hms.*tdcTimeRaw*
+block T.hms.*Mult*
+block H.cer.*AdcTdcDiffTime
+block H.cer.*Mult*
+block H.dc.*rawtdc*
+block H.dc.*nhit*
+block H.hod.*AdcTdcDiffTime*
+block H.hod.*Mult*
+block H.cal.*AdcTdcDiffTime*
+block H.cal.*Mult*
+
+
+;Calorimeter
+;block H.cal.good*AdcPulseInt*
+;block H.dc.ntrack
+;block H.dc.*_fp*
+;block H.gtr.p
+;block H.gtr.dp
+;block H.cer.npeSum
+;block H.hod.beta
+;block H.cal.nclust
+
+;DC Calibration
+;block H.dc.*
+;block H.cer.npe*
+;block H.cal.etot
+;block H.cal.etotnorm
+;block H.cal.etracknorm
+;block H.hod.starttime
+;block H.hod.beta*
+;block H.hod.*Track*
+
+;Hodo Calibration
+;block T.hms.*FADC*
+;block T.hms.*hT*
+;block H.hod.*
+;block H.dc.ntrack
+;block H.cal.etot*
+;block H.cal.etrack*
+;block H.cer.npe*
+
