@@ -20,8 +20,8 @@ static const string cal_pl_names[cal_PLANES] = {"1pr", "2ta", "3ta", "4ta"};
 static const string hdc_pl_names[dc_PLANES] = {"1u1", "1u2", "1x1", "1x2", "1v2", "1v1", "2v1", "2v2", "2x2", "2x1", "2u2", "2u1"};
 static const string pdc_pl_names[dc_PLANES] = {"1u1", "1u2", "1x1", "1x2", "1v1", "1v2", "2v2", "2v1", "2x2", "2x1", "2u2", "2u1"};
 
-static const string side_names[SIDES] = {"GoodPos", "GoodNeg"};
-static const string cal_side_names[SIDES] = {"goodPos", "goodNeg"};
+static const TString side_names[SIDES] = {"GoodPos", "GoodNeg"};
+static const TString cal_side_names[SIDES] = {"goodPos", "goodNeg"};
 
 static const string nsign[SIDES] = {"+", "-"};
 
@@ -35,12 +35,12 @@ static const Int_t pmaxPMT[hod_PLANES] = {13, 13, 14, 21};
 //=======Set HMS/SHMS/COIN REference Time Cuts=========
 //===================================================== 
 
-//NOTE: These Values must be entered with a "minus(-)" sign in the para file
+//NOTE: These Values must be entered with a "minus(-)" sign in the param file
 
 //(See /PARAM/HMS/GEN/h_reftime_cut.param, units in Channel)
-static const Double_t hhod_trefcut = 3000.;      //hodo tdc ref cut
-static const Double_t hdc_trefcut = 15800.;      //dc tdc ref cut
-static const Double_t hadc_trefcut = 4500.;      //hodo/cer/cal adc ref cut
+static const Double_t hhod_trefcut = 1200.;      //hodo tdc ref cut
+static const Double_t hdc_trefcut = 14600.;      //dc tdc ref cut
+static const Double_t hadc_trefcut = 2500.;      //hodo/cer/cal adc ref cut
 
 //(See /PARAM/SHMS/GEN/p_reftime_cut.param, units in Channel)
 static const Double_t phod_trefcut = 4000.;            //**NOTE: Use this to set t_coin_trig_tdcrefcut in tcoin.param
@@ -74,15 +74,15 @@ Double_t hCal_tWinMax[cal_PLANES][SIDES][13] = {0.};
 //-----------------------------
 //------ HMS CHERENKOV --------
 //-----------------------------
-Double_t hCer_tWinMin[2] = {80., 90.};
-Double_t hCer_tWinMax[2] = {105., 110.};
+Double_t hCer_tWinMin[2] = {130., 130.};
+Double_t hCer_tWinMax[2] = {170., 170.};
 
 //----------------------------------
 //------ HMS DRIFT CHAMBERS --------
 //----------------------------------
 // Deuteron H(e,e'p) Elastics
-Double_t hDC_tWinMin[dc_PLANES] = {-14e3, -14e3,   -14e3,   -14e3,  -14.e3,  -14e3,     -14e3,   -14e3,   -14e3,   -14e3,   -14e3,   -14e3   };
-Double_t hDC_tWinMax[dc_PLANES] = {-11.e3, -11.9e3, -11.8e3, -11.8e3,-10.6e3, -11.8e3, -10.8e3, -11.6e3, -11.8e3, -11.8e3, -10.6e3, -11.8e3 };
+Double_t hDC_tWinMin[dc_PLANES] = {-14.0e3, -14.0e3,   -14.0e3,   -14.0e3,  -14.0e3,  -14.0e3,     -14.0e3,   -14.0e3,   -14.0e3,   -14.0e3,   -14.0e3,   -14.0e3 };
+Double_t hDC_tWinMax[dc_PLANES] = {-11.4e3, -12.0e3,   -12.0e3,   -12.0e3,  -11.4e3,  -12.0e3,     -11.4e3,   -12.0e3,   -12.0e3,   -12.0e3,   -11.4e3,   -12.0e3 };
 
 
 

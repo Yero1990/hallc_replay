@@ -12,7 +12,7 @@ class DC_calib
  public:
   
   //consructor and destructor
-  DC_calib(string a, TString b, const Int_t c, Long64_t d, TString e, string f);
+  DC_calib(TString a, TString b, const Int_t c, Long64_t d, TString e, TString f);
   ~DC_calib();
 
 
@@ -46,7 +46,7 @@ class DC_calib
  private:
 
   //Calibration mode
-  string mode;
+  TString mode;
  
   Int_t run_NUM;
   Long64_t num_evts;
@@ -58,9 +58,10 @@ class DC_calib
   
   TString SPECTROMETER;
   TString spectre;
-  string spec;
+  TString spec;
   TString DETECTOR;
   TString plane_names[NPLANES];
+
   string planes[NPLANES];
   
   TString base_name;

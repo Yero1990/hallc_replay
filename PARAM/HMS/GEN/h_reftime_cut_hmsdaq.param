@@ -8,8 +8,16 @@
 ;     reference time is used and warning message is produced.
 ; Cut is on reference time per detector.
 
-hdc_tdcrefcut=-14800.
-hhodo_tdcrefcut=-1000.
+;init ref. times
+;hdc_tdcrefcut=-14800.
+;hhodo_tdcrefcut=-1000.
+;hhodo_adcrefcut=-2500.
+;hcer_adcrefcut=-2500.
+;hcal_adcrefcut=-2500.
+
+;final ref. times (HMS RUN 1267)
+hdc_tdcrefcut=-14600.
+hhodo_tdcrefcut=-1200.
 hhodo_adcrefcut=-2500.
 hcer_adcrefcut=-2500.
 hcal_adcrefcut=-2500.
