@@ -15,21 +15,21 @@ block H.cal.*
 block H.gtr.*
 
 ;Check Calibrations
-;block H.dc.residualExclPlane
-;block H.hod.beta
-;block H.hod.*TrackXPos*
-;block H.hod.*TrackYPos*
-;block H.hod.betanotrack		    
-;block H.cer.npeSum   
-;block H.cer.npe	   		    
-;block H.cal.etot 
-;block H.cal.etottracknorm
-;block H.cal.xtrack 
-;block H.cal.ytrack        
-;block H.dc.*time*
-;block H.dc.*wirenum*
-;block H.dc.*dist*
-;block H.dc.*nhit*
+block H.dc.residualExclPlane
+block H.hod.beta
+block H.hod.*TrackXPos*
+block H.hod.*TrackYPos*
+block H.hod.betanotrack		    
+block H.cer.npeSum   
+block H.cer.npe	   		    
+block H.cal.*etot* 
+block H.cal.*etrack*
+block H.cal.xtrack 
+block H.cal.ytrack        
+block H.dc.*time*
+block H.dc.*wirenum*
+block H.dc.*dist*
+block H.dc.*nhit*
 
 
 ;Ref. Time / Time Window checks
